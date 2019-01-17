@@ -1,4 +1,4 @@
-package com.tianhong.demo;
+package com.tianhong.demo.thread;
 
 /**
  * @author TianhongWang
