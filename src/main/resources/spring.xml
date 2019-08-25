@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id = "testBean" class = "com.tianhong.demo.IOCDemo.BeanInit.TestBean" name="testBean_1, testBean_2"/>
+    <alias name="testBean" alias="testBean_3" />
+    <bean id = "testBean2" class = "com.tianhong.demo.IOCDemo.BeanInit.TestBeanFactory" factory-method="getTestBean"/>
+
+    <bean class = "com.tianhong.demo.IOCDemo.BeanInit.Bean3Factory" id="bean3Factory"/>
+    <bean class = "com.tianhong.demo.IOCDemo.BeanInit.Bean3" factory-bean="bean3Factory"
+          factory-method="getBean3" id="bean3"/>
+</beans>

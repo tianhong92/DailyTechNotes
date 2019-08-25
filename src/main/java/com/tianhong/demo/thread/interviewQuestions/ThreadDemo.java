@@ -1,4 +1,4 @@
-package com.tianhong.demo.thread;
+package com.tianhong.demo.thread.interviewQuestions;
 
 /**
  * @author TianhongWang
@@ -32,5 +32,10 @@ public class ThreadDemo extends Thread {
             t = new Thread(this, threadName);
             t.start();
         }
+    }
+
+    public static void main(String[] args) {
+        ThreadDemo demo = new ThreadDemo("demo");
+        demo.run();
     }
 }

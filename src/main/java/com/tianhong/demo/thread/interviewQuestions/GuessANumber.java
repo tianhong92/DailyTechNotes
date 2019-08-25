@@ -1,4 +1,4 @@
-package com.tianhong.demo.thread;
+package com.tianhong.demo.thread.interviewQuestions;
 
 /**
  * @author TianhongWang

@@ -1,4 +1,4 @@
-package com.tianhong.demo.thread;
+package com.tianhong.demo.thread.interviewQuestions;
 
 class RunnableDemo implements Runnable {
     private String threadName;
