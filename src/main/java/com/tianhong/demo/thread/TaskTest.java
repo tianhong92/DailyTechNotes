@@ -12,9 +12,9 @@ public class TaskTest {
 
     @Scheduled(cron = "${cron.every}")
     public void simpleTask() throws Exception {
-        System.out.println("Get method simple task");
-        DirectProducer.produce("dev_vh", "direct_exchange", "pushappconfig", "dfa");
-        System.out.println("Finish method simple task");
+//        System.out.println("Get method simple task");
+//        DirectProducer.produce("dev_vh", "direct_exchange", "pushappconfig", "dfa");
+//        System.out.println("Finish method simple task");
     }
 
 }
